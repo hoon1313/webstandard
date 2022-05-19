@@ -1,11 +1,19 @@
 @charset "utf-8";
 @import "reset.css";
 
+/* 스킵 메뉴 */
+
+#skip { position: relative; }
+#skip a {position: absolute; left:0px; top:-35px; border : 1px solid #FFF;
+    color : #FFF; background-color: #333; line-height: 30px;
+    width: 160px; text-align: center;}
+#skip a:active,
+#skip a:focus {top:0;}
 
 /* 레이아웃 */
 #wrap{width:100%;}
 
-#header{width:100%; height: 325px; background-color: #111;}
+#header{width:100%; height: 325px; background : url(../img/header_bg.jpg) top center repeat-x ;}
 
 #contents{width:100%; height: 800px; background-color: #222;}
 
@@ -13,7 +21,7 @@
 
 /* 컨테이너 */
 
-.container { width: 990px; margin : 0 auto; height: inherit; background-color: rgba(255,255,255,0.3);}
+.container { width: 990px; margin : 0 auto; height: inherit; /* background-color: rgba(255,255,255,0.3);*/ }
 
 /* 컨텐츠 */
 
@@ -21,3 +29,22 @@
 #cont_title{width:100%; height: 200px; background-color: #444;}
 #cont_ban{width:100%; height: 200px; background-color: #555;}
 #cont_cont{width:100%; height: 200px; background-color: #666;}
+
+
+/* 헤더 */
+
+.header { }
+
+.header .header-menu{text-align: right;}
+.header .header-menu a {color : #FFF; display: inline-block; padding: 10px 0px 10px 13px;}
+.header .header-menu a:hover {color : #666;}
+
+.header .header-title{text-align : center;}
+.header .header-title h1{background-color: #4aa8d4;
+                        font-size: 28px;  margin-top:40px; padding:6px 20px; display: inline-block; color: #fff;
+                        font-weight: normal; text-transform: uppercase;}
+
+.header .header-title a { display: inline-block; background-color: #2698cb; font-size:18px;
+color:#fff; padding : 6px 20px; margin-top: -5px;}
+
+.header .header-icon{}
