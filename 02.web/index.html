@@ -43,8 +43,20 @@
                         <a href="#">hoons.com</a>
                     </div>
 
+                    <!-- 이미지 표현 방법 
+                    1. img태그로 표현(의미가 있을 때) / alt 태그 - 대체 문자 표현
+                    2. background 속성으로 표현 (의미가 없을 때) - 대체 문자 x
+                    3.  이미지를 background 속성 - 웹 표준을 준수하기 위해서는 
+                        가상으로 대체문자를 만들어줌 (IR 효과)
+                        이미지 스프라이트 기법으로 빠르고 용량이 줄어듬 -->
 
-                    <div class="header-icon"></div>
+                    <!-- 헤더 아이콘 -->
+                    <div class="header-icon">
+                        <a href="#" class="icon1"><span class="ir_pm">icon1</span></a>
+                        <a href="#" class="icon2"><span class="ir_pm">icon2</span></a>
+                        <a href="#" class="icon3"><span class="ir_pm">icon3</span></a>
+                        <a href="#" class="icon4"><span class="ir_pm">icon4</span></a>
+                    </div>
                 </div>
             </div>
         </div>
