@@ -117,7 +117,7 @@ background : url(../img/icon.png) no-repeat 0 -600px;}
 .cont .column .ico_img {display: block; width: 60px; height: 60px;
 background : url(../img/icon.png) no-repeat; position: absolute; left: 0px; top: 15px;} 
 .cont .column .ico_title {padding-left : 70px; font-size: 16px; color : #2c94c4;} 
-.cont .column .ico_desc {margin-top : -10px; padding-left : 70px; padding-bottom : 15px; border-bottom : 1px solid #d0d0d0;} 
+.cont .column .ico_desc {margin-top : -10px; padding-left : 70px; padding-bottom : 1px; border-bottom : 1px solid #d0d0d0;} 
 
 .cont .col1 .ico_img { background-position: 0px -240px;}
 .cont .col2 .ico_img { background-position: 0px -300px;}
@@ -163,3 +163,61 @@ background : url(../img/icon.png) no-repeat; position: absolute; left: 0px; top:
 .notice3 li a span {display: block; overflow:hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px;}
 .notice3 a.more{position: absolute; right : 0; top:0; display: block; background:url(../img/icon.png)
     -150px -90px; width: 17px; height: 17px;}
+
+
+/* 마우스 오버효과1 */
+
+.notice_hover {}
+.notice_hover h4 {font-size: 14px; color: #0093bd; margin-bottom : 5px; font-weight: bold;}
+.notice_hover ul {overflow: hidden;}
+.notice_hover li {float: left; width: 93px; margin-right: 5px; text-align: center;}
+.notice_hover li:nth-child(3){ margin-right : 0px;}
+.notice_hover li:nth-child(6){ margin-right : 0px;}
+.notice_hover li a {}
+.notice_hover li a span { position: relative; display: block; width: 93px; height: 93px; line-height: 93px;}
+.notice_hover li a span img {width: 100%; }
+.notice_hover li a span em {visibility: hidden; position: absolute; left:0; top: 0; background : rgba(0,0,0,0.5); color:#fff;
+width: 100%; height: 100%; }
+.notice_hover li a span:hover em { 
+    visibility: visible;
+}
+.notice_hover li a strong {display: inline-block; font-size: 12px; padding-top : 5px;
+}
+
+
+/* 마우스 오버효과2 */
+
+.notice_hover2 {}
+.notice_hover2 ul {overflow : hidden;}
+.notice_hover2 li {float:left; width: 93px; text-align: center; margin-right: 5px;}
+.notice_hover2 li:last-child {margin-right: 0;}
+.notice_hover2 li a{}
+.notice_hover2 li a span{position: relative; display: block; width: 93px; height: 93px; }
+.notice_hover2 li a span img{width: 100%;}
+.notice_hover2 li a span em{visibility: hidden; position: absolute; left:0; bottom: 0; background : rgba(0,0,0,0.5); color:#fff;
+    width: 100%;  }
+.notice_hover2 li a span:hover em { 
+    visibility: visible;
+}
+.notice_hover2 li a strong{padding-top: 3px; display: inline-block; font-size: 12px;}
+
+
+/* 콘텐츠 요소를 보이지 않게 하는 방법 
+1. display:none; -- display:block;  (영역이 사라짐)
+2. visibility:hidden; -- visibility:visible; (영역 유지)
+3. opacity : 0; -- opacity: 1; (영역 유지)
+4. width:0; height:0; overflow:hidden; 
+*/
+
+/* 탭메뉴 */
+
+.tap_menu {position: relative; border : 1px solid #ccc; padding: 8px; height: 105px;}
+.tap_menu ul {overflow : hidden; border-bottom: 1px solid #ccc; }
+.tap_menu ul li {float: left; border:1px solid #ccc; margin-bottom: -1px; margin-right: -1px;}
+.tap_menu ul li a{ display: block; padding: 5px 10px; }
+.tap_menu ul li ul {position : absolute; left: 0; top: 48px; width: 270px; border: 0;}
+.tap_menu ul li ul li{float: none; border:0; background : url(../img/dot.gif) no-repeat 9px 8px; padding-left: 18px;}
+.tap_menu ul li ul li a{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 100%; padding : 0 0 3px 0; }
+.tap_menu ul li.active {background : #2c94c4;}
+.tap_menu ul li.active a { color : #fff; }
+.tap_menu ul li.active ul li a { color : #333;}

@@ -5,8 +5,8 @@
 html, body, div, span, applet, object, iframe,
 p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -43,13 +43,16 @@ h1,h2,h3,h4,h5,h6 {
 
 /* 폰트 초기화  */
 
-body, input, textarea, select, button, table {
+body, input, textarea, select, button, table{
 	font-family: 'Nanum Gothic', sans-serif;
 	color : #222;
 	font-size:  13px;
 	line-height: 1.5;
 }
-
+/* 폰트스타일 초기화 */   
+em {
+	font-style: normal;
+}
 
 /* IR 효과 */
 /* 1. 의미있는 이미지의 대체 텍스트를 제공하는 경우 */
@@ -83,3 +86,15 @@ body, input, textarea, select, button, table {
 a:hover {
 	color : #390;
 }
+
+
+/* margin-top */
+.mt10 { margin-top: 10px;}
+.mt15 { margin-top: 15px;}
+.mt20 { margin-top: 20px;}
+.mt25 { margin-top: 25px;}
+.mt30 { margin-top: 30px;}
+.mt35 { margin-top: 35px;}
+.mt40 { margin-top: 40px;}
+.mt45 { margin-top: 45px;}
+.mt50 { margin-top: 50px;}
