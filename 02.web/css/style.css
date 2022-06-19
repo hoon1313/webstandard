@@ -17,7 +17,7 @@
 
 #contents{}
 
-#footer{border-top 1px solid #eee;}
+#footer{border-top : 1px solid #eee;}
 
 /* 컨테이너 */
 
@@ -160,7 +160,7 @@ background : url(../img/icon.png) no-repeat; position: absolute; left: 0px; top:
 
 .notice2 {position: relative; margin-top: 15px;}
 .notice2 h4 {font-size: 14px; color: #0093bd; margin-bottom : 5px; font-weight: bold;}
-.notice2 ul {}
+
 .notice2 li { overflow: hidden; background : url(../img/dot.gif) no-repeat 0px 8px; padding-left: 8px;}
 .notice2 li a {float:left; width: 65%; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}
 .notice2 li span {float: right; width: 30%; text-align: right;}
@@ -182,13 +182,13 @@ background : url(../img/icon.png) no-repeat; position: absolute; left: 0px; top:
 
 /* 마우스 오버효과1 */
 
-.notice_hover {}
+
 .notice_hover h4 {font-size: 14px; color: #0093bd; margin-bottom : 5px; font-weight: bold;}
 .notice_hover ul {overflow: hidden;}
 .notice_hover li {float: left; width: 93px; margin-right: 5px; text-align: center;}
 .notice_hover li:nth-child(3){ margin-right : 0px;}
 .notice_hover li:nth-child(6){ margin-right : 0px;}
-.notice_hover li a {}
+
 .notice_hover li a span { position: relative; display: block; width: 93px; height: 93px; line-height: 93px;}
 .notice_hover li a span img {width: 100%; }
 .notice_hover li a span em {visibility: hidden; position: absolute; left:0; top: 0; background : rgba(0,0,0,0.5); color:#fff;
@@ -202,11 +202,11 @@ width: 100%; height: 100%; }
 
 /* 마우스 오버효과2 */
 
-.notice_hover2 {}
+
 .notice_hover2 ul {overflow : hidden;}
 .notice_hover2 li {float:left; width: 93px; text-align: center; margin-right: 5px;}
 .notice_hover2 li:last-child {margin-right: 0;}
-.notice_hover2 li a{}
+
 .notice_hover2 li a span{position: relative; display: block; width: 93px; height: 93px; }
 .notice_hover2 li a span img{width: 100%;}
 .notice_hover2 li a span em{visibility: hidden; position: absolute; left:0; bottom: 0; background : rgba(0,0,0,0.5); color:#fff;
@@ -297,7 +297,7 @@ width: 100%; height: 100%; }
 
 /* 팝업 */
 
-.popup {}
+
 .popup h4 { font-size: 14px; color: #0093bd; padding-bottom: 4px; font-weight: 700;}
 .popup ul {overflow: hidden;}
 .popup ul li {float: left; width:93px; margin-right: 5px;}
