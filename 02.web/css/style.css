@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+/* 스킵메뉴 */
+#skip {
+    position: relative;
+}
+
+#skip a {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    border: 1px solid white;
+    background-color: #333;
+    padding: 10px 0;
+    width: 150px;
+    text-align: center;
+}
+
+#skip a:focus {
+    top: 0;
+}
+
+#wrap {}
+
+#header {
+    height: 325px;
+    background: url("../img/header_bg.jpg") repeat-x center top;
+    background-size: cover;
+}
+
+#contents {}
+
+#footer {
+    height: 200px;
+    background-color: #333;
+}
+
+
+/* container [inner]*/
+
+.container {
+    width: 990px;
+    margin: 0 auto;
+    height: inherit;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+
+/* contents 레이아웃 */
+
+#cont_nav {
+    background-color: #f6fdff;
+
+}
+
+#cont_title {
+    background-color: #EAF7FD;
+    width: 100%;
+
+}
+
+#cont_banner {
+    background-color: #dceff7;
+}
+
+#cont_contents {
+    width: 100%;
+    height: 200px;
+    background-color: #666;
+
+}
+
+/* header */
+.header .header_menu {
+    text-align: right;
+}
+
+.header .header_menu a {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 0px 10px 13px;
+}
+
+.header .header_menu a:hover {
+    color: #666;
+}
+
+.header .header_title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.header .header_title h1 {
+    background-color: #4aa8d4;
+    font-size: 28px;
+    color: #fff;
+    padding: 5px 20px 6px 20px;
+    display: inline-block;
+}
+
+.header .header_title a {
+    display: inline-block;
+    background-color: #2698cb;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 20px 6px 20px;
+    margin-top: -5px;
+}
+
+.header .header_icon {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.header .header_icon a {
+    width: 60px;
+    margin: 0 3px;
+    height: 60px;
+    display: inline-block;
+    background: url("../img/icon.png");
+}
+
+.header .header_icon a.icon1 {
+    background-position: 0 0;
+}
+
+.header .header_icon a.icon2 {
+    background-position: 0 -60px;
+
+}
+
+.header .header_icon a.icon3 {
+    background-position: 0 -120px;
+
+}
+
+.header .header_icon a.icon4 {
+    background-position: 0 -180px;
+
+}
+
+.header .header_icon a.icon1:hover {
+    background-position: -60px 0;
+}
+
+.header .header_icon a.icon2:hover {
+    background-position: -60px -60px;
+
+}
+
+.header .header_icon a.icon3:hover {
+    background-position: -60px -120px;
+
+}
+
+.header .header_icon a.icon4:hover {
+    background-position: -60px -180px;
+
+}
+
+/* contents nav영역*/
+/* float:left로 인한 영역깨짐(height:0) 방지법
+    1. 깨지는 영역에 똑같이 float:left; 사용 (X) -- 모든 박스에 float 사용해야함
+    2. float의 성질을 차단하는 clear:both;를 사용한다 (X) -- 박스영역이 많아지면 어떤 영역이 깨졌는지 찾기가 힘들어진다.
+    3. float을 사용한 상위 박스한테 overflow:hidden; 을 사용한다. (O)
+    4. clearfix를 사용한다. (O)*/
+.nav {
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.nav>div {
+    float: left;
+    width: 40%;
+}
+
+.nav>div.last {
+    width: 20%;
+}
+
+.nav>div ol {
+    overflow: hidden;
+}
+
+.nav>div ol li {
+    width: 50%;
+    float: left;
+}
+
+.nav>div.last ol li {
+    width: 100%;
+}
+
+.nav>div ol li a:hover {
+    text-decoration: underline;
+}
+
+
+.nav>div h3 {
+    font-size: 18px;
+    color: #25a2d0;
+    margin-bottom: 4px;
+}
+
+
+/* cont_title */
+.tit {
+    text-align: center;
+    position: relative;
+}
+
+.tit h2 {
+    padding: 5px 0;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-family: 'Nanum Brush Script', cursive;
+    color: #2c94c4;
+
+}
+
+.tit .btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icon.png") no-repeat;
+    background-position: 0 -600px;
+}
+
+/* banner */
+
+.ban {
+    position: relative;
+    padding: 24px 0 20px;
+}
+
+.ban a.prev {
+    background: url("../img/icon.png") no-repeat -150px 0;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: -80px;
+    top: 60px;
+}
+
+.ban a.prev:hover {
+    background: url("../img/icon.png") no-repeat -193px 0;
+
+}
+
+.ban a.next {
+    background: url("../img/icon.png") no-repeat -150px -43px;
+
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    right: -80px;
+    top: 60px;
+}
+
+.ban a.next:hover {
+    background: url("../img/icon.png") no-repeat -193px -43px;
+
+}
+
+.ban ul {
+    overflow: hidden;
+}
+
+.ban ul li {
+    float: left;
+    width: 330px;
+}
+
+.ban ul li:last-child {
+    text-align: right;
+}
+
+.ban ul li:nth-child(2) {
+    text-align: center;
+}
+
+.ban ul li img {
+    border: 4px solid #dcdcdc;
+}
+
+.ban ul li img:hover {
+    border-color: #98bcdc;
+}
