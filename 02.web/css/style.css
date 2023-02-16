@@ -31,8 +31,8 @@
 #contents {}
 
 #footer {
+    border-top: 1px solid #222;
     height: 200px;
-    background-color: #333;
 }
 
 
@@ -49,6 +49,7 @@
 /* contents 레이아웃 */
 
 #cont_nav {
+    display: none;
     background-color: #f6fdff;
 
 }
@@ -226,8 +227,91 @@
     background-position: 0 -600px;
 }
 
+.tit .btn.on {
+    background-position: 0px -660px;
+
+}
+
 /* banner */
 
+/* slick banner */
+.ban {
+    position: relative;
+    padding: 24px 0 40px;
+}
+
+.ban .slick-prev {
+    text-indent: -9999px;
+    background: url("../img/icon.png") no-repeat -150px 0;
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    left: -80px;
+    top: 80px;
+}
+
+.ban .slick-next {
+    text-indent: -9999px;
+    background: url("../img/icon.png") no-repeat -150px -43px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    right: -80px;
+    top: 80px;
+}
+
+.ban .slick-prev:hover {
+    background: url("../img/icon.png") no-repeat -193px 0;
+}
+
+.ban .slick-next:hover {
+    background: url("../img/icon.png") no-repeat -193px -43px;
+}
+
+.ban img {
+    border: 4px solid #dcdcdc;
+}
+
+.ban img:hover {
+    border-color: #98bcdc;
+}
+
+.ban .slick-slide {
+    margin: 10px;
+}
+
+.ban .slick-dots {
+    position: absolute;
+    bottom: 15px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.ban .slick-dots li {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+}
+
+.ban .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    background-color: #5dbfeb;
+    border-radius: 50%;
+}
+
+.ban .slick-dots li.slick-active button {
+    background: #2b91c8;
+
+}
+
+/* 
 .ban {
     position: relative;
     padding: 24px 0 20px;
@@ -285,7 +369,7 @@
 
 .ban ul li img:hover {
     border-color: #98bcdc;
-}
+} */
 
 /* 컨텐츠 */
 
@@ -768,7 +852,6 @@
 
 .notice4 ul li {
     overflow: hidden;
-    width: 100%;
     background: url("../img/dot.gif") no-repeat 0 8px;
     padding-left: 8px;
     padding-bottom: 2px;
@@ -784,13 +867,314 @@
 }
 
 .notice4 ul li span {
-    float: right;
-    text-align: left;
     width: 30%;
+    float: right;
+    text-align: right;
 }
 
 .notice4 a.more {
     position: absolute;
     right: 9px;
     top: 9px;
+}
+
+
+/* gallery */
+
+.gallery {
+    border: 1px solid #ccc;
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery h4 {
+    font-size: 14px;
+    color: #0093bd;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 8px 11px;
+}
+
+.gallery .gallery_btn {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+}
+
+.gallery .gallery_btn ul {
+    overflow: hidden;
+}
+
+.gallery .gallery_btn ul li {
+    float: left;
+    margin: 1px 2px;
+}
+
+.gallery .gallery_btn ul li a {
+    width: 23px;
+    height: 23px;
+    display: block;
+    background: url("../img/icon.png") no-repeat;
+}
+
+.gallery .gallery_btn ul li.gb_icon1 a {
+    background-position: -150px -120px;
+}
+
+.gallery .gallery_btn ul li.gb_icon2 a {
+    background-position: -150px -143px;
+
+}
+
+.gallery .gallery_btn ul li.gb_icon3 a {
+    background-position: -150px -166px;
+
+}
+
+.gallery .gallery_btn ul li.gb_icon4 a {
+    background-position: -150px -189px;
+
+}
+
+.gallery .gallery_btn ul li.gb_icon1 a:hover {
+    background-position: -173px -120px;
+}
+
+.gallery .gallery_btn ul li.gb_icon2 a:hover {
+    background-position: -173px -143px;
+
+}
+
+.gallery .gallery_btn ul li.gb_icon3 a:hover {
+    background-position: -173px -166px;
+
+}
+
+.gallery .gallery_btn ul li.gb_icon4 a:hover {
+    background-position: -173px -189px;
+
+}
+
+.gallery .gallery_img img {
+    width: 100%;
+    display: block;
+}
+
+/* 슬릭 갤러리 */
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .gallery_btn button {
+    float: left;
+    margin: 1px 2px;
+    width: 23px;
+    height: 23px;
+    display: block;
+    background: url("../img/icon.png") no-repeat;
+}
+
+.gallery .gallery_btn button.gb_icon1 {
+    background-position: -150px -120px;
+}
+
+.gallery .gallery_btn button.gb_icon2 {
+    background-position: -150px -143px;
+
+}
+
+.gallery .gallery_btn button.gb_icon3 {
+    background-position: -150px -166px;
+
+}
+
+.gallery .gallery_btn button.gb_icon4 {
+    background-position: -150px -189px;
+
+}
+
+.gallery .gallery_btn button.gb_icon1:hover {
+    background-position: -173px -120px;
+}
+
+.gallery .gallery_btn button.gb_icon2:hover {
+    background-position: -173px -143px;
+
+}
+
+.gallery .gallery_btn button.gb_icon3:hover {
+    background-position: -173px -166px;
+
+}
+
+.gallery .gallery_btn button.gb_icon4:hover {
+    background-position: -173px -189px;
+
+}
+
+/* login */
+
+#login_form {
+    background-color: #f2f4f5;
+    padding: 15px;
+}
+
+
+.login_header {
+    font-size: 12px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.login_header .lh_check {
+    float: left;
+    padding-right: 15px;
+}
+
+.login_header .lh_check .input_check {
+    vertical-align: -2px;
+}
+
+.login_header .lh_ip {
+    float: left;
+}
+
+.login_header .lh_ip em {
+    color: #0093bd;
+    text-decoration: underline;
+}
+
+.login_contents {
+    position: relative;
+}
+
+.login_contents .lc_text {}
+
+.login_contents .input_text {
+    width: 182px;
+    height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #bebebe;
+    margin-bottom: 3px;
+    background: #fff;
+}
+
+.login_contents .lc_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 62px;
+    height: 47px;
+    background-color: #fff;
+    border: 1px solid #bebebe;
+}
+
+
+
+
+
+
+.login_footer ul {
+    margin-top: 5px;
+}
+
+.login_footer ul li {
+    display: inline-block;
+
+}
+
+.login_footer ul li a {
+    font-size: 12px;
+}
+
+
+/* popup */
+
+.popup h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 4px;
+    font-weight: 700;
+}
+
+
+.popup ul {
+    overflow: hidden;
+}
+
+.popup ul li {
+    float: left;
+    width: 93px;
+    margin-right: 5px;
+}
+
+.popup ul li.last {
+    margin-right: 0;
+}
+
+.popup ul li img {
+    width: 100%;
+    display: block;
+}
+
+/* footer */
+.footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer ul {
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    position: relative;
+    display: inline;
+    padding: 0 7px 0 10px;
+}
+
+.footer ul li::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #ccc;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.footer ul li:first-child:before {
+    width: 0;
+    height: 0;
+}
+
+/* layer popup */
+
+#layer {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    width: 700px;
+    border: 10px solid #dceff7;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#layer img {
+    width: 100%;
+    display: block;
+}
+
+#layer .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #0093bd;
+    padding: 1px 6px;
+    color: #fff;
+}
+
+#layer .close:hover {
+    text-decoration: underline;
 }
